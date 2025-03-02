@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-green-100 py-10 px-20 mx-auto">
+    <!-- Header section -->
+     <header class=" ">
+        <nav class="my-4 px-6 navbar shadow-sm bg-[#ffffff]  rounded-lg flex justify-between">
+            <div class="flex justify-center items-center">
+                <img src="assets/logo.png" alt="" class="w-8 h-8">&nbsp;
+                <p class=" text-2xl">Dev<span class="font-extrabold">Board</span></p>
+              </div>
+              <div class="flex justify-between items-center gap-10">
+                <button id="back-button" class="btn px-6 py-3 bg-blue-600 font-bold">Back To Desk</button>
+              </div>
+        </nav>
+    </header>
+       <!-- Main section -->
+   <main>
+    <!-- blog section -->
+     <section class="my-10">
+        <h1 class="text-center font-bold text-3xl">Blog</h1>
+     </section>
+     <section class="my-10">
+        <div class="bg-white mb-4">
+            <p class="font-bold text-left p-3">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr class=" border-t-2 border-dotted border-gray-300">
+            <pre class="text-left p-3">
+<span class="font-bold">Answer:</span>
+We can select the element of the dom in different ways, examples: 
+1. with Id: getElementById()
+2. with classname: getElementsByClassName()
+3. with tagname: getElementsByTagName()
+4. with query selector: querySelector() and querySelectorAll()
+                </pre>
+        </div>
+        <div class="bg-white mb-4">
+            <p class="font-bold text-left p-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </p>
+            <hr class=" border-t-2 border-dotted border-gray-300">
+            <pre class="text-left p-3">
+<span class="font-bold">Answer:</span>
+innerHTML changes all html content or return HTML content.
+innerText return the visible text or set the text.
+textContent return the whole textcontent or set without html tag.                
+                </pre>
+        </div>
+        <div class="bg-white mb-4">
+            <p class="font-bold text-left p-3">Question-3: What is event delegation in the DOM?
+            </p>
+            <hr class=" border-t-2 border-dotted border-gray-300">
+            <pre class="text-left p-3">
+<span class="font-bold">Answer:</span>
+Event delegation is a kind of technique where a parent element attached <br>with eventlistener and that event work on the child element.
+                </pre>
+        </div>
+        <div class="bg-white mb-4">
+            <p class="font-bold text-left p-3">Question-4: What is event bubbling in the DOM?
+            </p>
+            <hr class=" border-t-2 border-dotted border-gray-300">
+            <pre class="text-left p-3">
+<span class="font-bold">Answer:</span>
+Event Bubbling is a mechanism of dom event handling. Where, if  the event perform on <br>the parent it sprayed automatically all the elements until finishing the document .
+
+                </pre>
+        </div>
+        <div class="bg-white mb-4">
+            <p class="font-bold text-left p-3">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class=" border-t-2 border-dotted border-gray-300">
+            <pre class="text-left p-3">
+<span class="font-bold">Answer:</span>
+We can create, add and remove a element by using JavaScript Dom manipulation.
+1. To create a new element we can use document.createElement() method.
+2. To add a new element we can use appendChild(), append() etc.
+3. To remove an element we can use remove(), removeChild()
+                </pre>
+        </div>
+     </section>
+   </main>
+<!-- add script file -->
+ <script src="script/blog.js"></script>
+</body>
+</html>
